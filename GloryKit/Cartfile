@@ -1,0 +1,4 @@
+github "Moya/Moya" == 13.0
+github "tristanhimmelman/ObjectMapper" == 3.4
+github "realm/realm-cocoa" == 3.18.0
+github "SnapKit/SnapKit" == 5.0.0
