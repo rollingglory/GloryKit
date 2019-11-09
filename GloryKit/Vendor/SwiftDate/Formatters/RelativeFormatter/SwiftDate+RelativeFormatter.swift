@@ -12,6 +12,7 @@
 
 import Foundation
 
+/// :nodoc:
 public class RelativeFormatter: DateToStringTrasformable {
 
 	/// Private singleton for relative formatter

@@ -40,6 +40,7 @@ internal class RelativeFormatterLanguagesCache {
     }
 }
 
+/// :nodoc:
 public enum RelativeFormatterLanguage: String, CaseIterable {
     case af = "af" // Locales.afrikaans
     case am = "am" // Locales.amharic

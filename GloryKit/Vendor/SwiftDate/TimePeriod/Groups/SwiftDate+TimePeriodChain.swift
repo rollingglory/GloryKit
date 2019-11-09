@@ -131,10 +131,12 @@ open class TimePeriodChain: TimePeriodGroup {
 		end = end?.addingTimeInterval(duration)
 	}
 
+    /// :nodoc:
 	public override func map<T>(_ transform: (TimePeriodProtocol) throws -> T) rethrows -> [T] {
 		return try periods.map(transform)
 	}
 
+    /// :nodoc:
 	public override func filter(_ isIncluded: (TimePeriodProtocol) throws -> Bool) rethrows -> [TimePeriodProtocol] {
 		return try periods.filter(isIncluded)
 	}

@@ -9,8 +9,11 @@
 
 import Foundation
 
+/// :nodoc:
 public typealias Closure = ((Any?) -> Any?)
+/// :nodoc:
 public typealias StartClosure = (() -> Any?)
+/// :nodoc:
 public typealias CompletionClosure = ((Any?) -> Void)
 
 // MARK: - SwiftyTaskClass
@@ -19,8 +22,11 @@ public typealias CompletionClosure = ((Any?) -> Void)
 /// more easily and more feasible.
 public final class SwiftyTask {
     
+    /// :nodoc:
     public let closure: Closure
+    /// :nodoc:
     public let queue: Queue
+    /// :nodoc:
     public let previousTask: SwiftyTask?
     
     /// SwiftyTask initialization

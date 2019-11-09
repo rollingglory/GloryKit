@@ -65,6 +65,7 @@ public struct Region: Decodable, Encodable, Equatable, Hashable, CustomStringCon
         self.init(calendar: cal, zone: tz, locale: loc)
 	}
 
+    /// Get UTC region
 	public static var UTC: Region {
 		return Region(calendar: Calendar.autoupdatingCurrent,
 					  zone: Zones.gmt.toTimezone(),

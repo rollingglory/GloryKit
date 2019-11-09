@@ -12,6 +12,7 @@
 
 import Foundation
 
+/// :nodoc:
 public class DOTNETParser: StringToDateTransformable {
 
 	internal static let pattern = "\\/Date\\((-?\\d+)((?:[\\+\\-]\\d+)?)\\)\\/"
@@ -57,6 +58,7 @@ public class DOTNETParser: StringToDateTransformable {
 
 }
 
+/// :nodoc:
 public class DOTNETFormatter: DateToStringTrasformable {
 
 	public static func format(_ date: DateRepresentable, options: Any?) -> String {

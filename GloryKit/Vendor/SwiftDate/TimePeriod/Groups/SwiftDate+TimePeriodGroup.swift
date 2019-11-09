@@ -47,29 +47,29 @@ open class TimePeriodGroup: Sequence, Equatable {
 	}
 
 	// MARK: - Initializers
-
+    /// :nodoc:
 	public init(_ periods: [TimePeriodProtocol]? = nil) {
 		self.periods = (periods ?? [])
 	}
 
 	// MARK: - Sequence Protocol
-
+    /// :nodoc:
 	public func makeIterator() -> IndexingIterator<[TimePeriodProtocol]> {
 		return periods.makeIterator()
 	}
-
+    /// :nodoc:
 	public func map<T>(_ transform: (TimePeriodProtocol) throws -> T) rethrows -> [T] {
 		return try periods.map(transform)
 	}
-
+    /// :nodoc:
 	public func filter(_ isIncluded: (TimePeriodProtocol) throws -> Bool) rethrows -> [TimePeriodProtocol] {
 		return try periods.filter(isIncluded)
 	}
-
+    /// :nodoc:
 	public func forEach(_ body: (TimePeriodProtocol) throws -> Void) rethrows {
 		return try periods.forEach(body)
 	}
-
+    /// :nodoc:
 	public func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator isSeparator: (TimePeriodProtocol) throws -> Bool) rethrows -> [AnySequence<TimePeriodProtocol>] {
 		return try periods.split(maxSplits: maxSplits, omittingEmptySubsequences: omittingEmptySubsequences, whereSeparator: isSeparator).map(AnySequence.init)
 	}

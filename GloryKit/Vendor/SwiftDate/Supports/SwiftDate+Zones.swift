@@ -12,10 +12,11 @@
 
 import Foundation
 
+/// :nodoc:
 public protocol ZoneConvertible {
 	func toTimezone() -> TimeZone
 }
-
+/// :nodoc:
 extension TimeZone: ZoneConvertible {
 	public func toTimezone() -> TimeZone {
 		return self
@@ -23,6 +24,7 @@ extension TimeZone: ZoneConvertible {
 }
 
 // swiftlint:disable type_body_length
+/// :nodoc:
 public enum Zones: String, ZoneConvertible {
 	case current = "Current"
 	case autoUpdating = "CurrentAutoUpdating"

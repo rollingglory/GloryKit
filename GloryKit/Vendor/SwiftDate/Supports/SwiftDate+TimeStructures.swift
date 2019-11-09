@@ -15,6 +15,7 @@ import Foundation
 // MARK: - Weekday
 
 /// This define the weekdays for some functions.
+/// :nodoc:
 public enum WeekDay: Int {
 	case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday
 
@@ -58,7 +59,7 @@ public enum WeekDay: Int {
 }
 
 // MARK: - Year
-
+/// :nodoc:
 public struct Year: CustomStringConvertible, Equatable {
 	let year: Int
 
@@ -92,6 +93,7 @@ public struct Year: CustomStringConvertible, Equatable {
 // MARK: - Month
 
 /// Defines months in a year
+/// :nodoc:
 public enum Month: Int, CustomStringConvertible, Equatable {
 	case january = 0, february, march, april, may, june, july, august, september, october, november, december
 

@@ -14,10 +14,12 @@
 
 import Foundation
 
+/// :nodoc:
 public protocol LocaleConvertible {
 	func toLocale() -> Locale
 }
 
+/// :nodoc:
 extension Locale: LocaleConvertible {
 	public func toLocale() -> Locale {
 		return self
@@ -25,6 +27,7 @@ extension Locale: LocaleConvertible {
 }
 
 // swiftlint:disable type_body_length
+/// :nodoc:
 public enum Locales: String, LocaleConvertible {
 
 	case current = "current"

@@ -11,13 +11,13 @@
 //
 
 import Foundation
-
+/// :nodoc:
 public typealias Calendars = Calendar.Identifier
-
+/// :nodoc:
 public protocol CalendarConvertible {
 	func toCalendar() -> Calendar
 }
-
+/// :nodoc:
 extension Calendar: CalendarConvertible {
 
 	public func toCalendar() -> Calendar {
@@ -31,7 +31,7 @@ extension Calendar: CalendarConvertible {
 	}
 
 }
-
+/// :nodoc:
 extension Calendar.Identifier: CalendarConvertible {
 
 	public func toCalendar() -> Calendar {
@@ -41,7 +41,7 @@ extension Calendar.Identifier: CalendarConvertible {
 }
 
 // MARK: - Support for Calendar.Identifier encoding with Codable
-
+/// :nodoc:
 extension Calendar.Identifier: CustomStringConvertible {
 
 	public var description: String {

@@ -13,29 +13,29 @@
 import Foundation
 
 // MARK: - Math Operation DateInRegion - DateInRegion
-
+/// Substract dates and return TimeInterval between the two
 public func - (lhs: DateInRegion, rhs: DateInRegion) -> TimeInterval {
 	return lhs.timeIntervalSince(rhs)
 }
 
 // MARK: - Math Operation DateInRegion - Date Components
-
+/// Adds dates
 public func + (lhs: DateInRegion, rhs: DateComponents) -> DateInRegion {
 	let nextDate = lhs.calendar.date(byAdding: rhs, to: lhs.date)
 	return DateInRegion(nextDate!, region: lhs.region)
 }
-
+/// Substract dates
 public func - (lhs: DateInRegion, rhs: DateComponents) -> DateInRegion {
 	return lhs + (-rhs)
 }
 
 // MARK: - Math Operation DateInRegion - Calendar.Component
-
+/// Adds dates and returns Calendar.Component
 public func + (lhs: DateInRegion, rhs: [Calendar.Component: Int]) -> DateInRegion {
 	let cmps = DateInRegion.componentsFrom(values: rhs)
 	return lhs + cmps
 }
-
+/// Substract dates and return Calendar.Component
 public func - (lhs: DateInRegion, rhs: [Calendar.Component: Int]) -> DateInRegion {
 	var invertedCmps: [Calendar.Component: Int] = [:]
 	rhs.forEach { invertedCmps[$0.key] = -$0.value }

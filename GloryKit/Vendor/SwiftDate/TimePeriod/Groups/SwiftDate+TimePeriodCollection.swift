@@ -16,6 +16,7 @@ import Foundation
 ///
 /// - ascending: sort in ascending order
 /// - descending: sort in descending order
+/// :nodoc:
 public enum SortMode {
 	case ascending
 	case descending
@@ -27,6 +28,7 @@ public enum SortMode {
 /// - end: sort by end date
 /// - duration: sort by duration
 /// - custom: sort using custom function
+/// :nodoc:
 public enum SortType {
 	case start(_: SortMode)
 	case end(_: SortMode)
@@ -165,7 +167,7 @@ open class TimePeriodCollection: TimePeriodGroup {
 	}
 
 	// MARK: - Map
-
+    /// :nodoc:
 	public func map(_ transform: (TimePeriodProtocol) throws -> TimePeriodProtocol) rethrows -> TimePeriodCollection {
 		var mappedArray = [TimePeriodProtocol]()
 		mappedArray = try periods.map(transform)
@@ -178,14 +180,14 @@ open class TimePeriodCollection: TimePeriodGroup {
 	}
 
 	// MARK: - Helpers
-
+    /// :nodoc:
 	private func sortFuncDuration(_ type: SortMode) -> ((TimePeriodProtocol, TimePeriodProtocol) -> Bool) {
 		switch type {
 		case .ascending: 	return { $0.duration < $1.duration }
 		case .descending: 	return { $0.duration > $1.duration }
 		}
 	}
-
+    /// :nodoc:
 	private func sortFunc(byStart start: Bool = true, type: SortMode) -> ((TimePeriodProtocol, TimePeriodProtocol) -> Bool) {
 		return {
 			let date0 = (start ? $0.start : $0.end)

@@ -12,44 +12,49 @@
 
 import Foundation
 
+/// Transform Date type directly to String with specified format
 public protocol DateToStringTrasformable {
+    /// Transform Date type directly to String with specified format
 	static func format(_ date: DateRepresentable, options: Any?) -> String
 }
-
+/// Transform String type directly to Date with specified format in region
 public protocol StringToDateTransformable {
+    /// Transform String type directly to Date with specified format in region
 	static func parse(_ string: String, region: Region?, options: Any?) -> DateInRegion?
 }
 
 // MARK: - Formatters
 
 /// Format to represent a date to string
-///
-/// - iso: standard iso format. The ISO8601 formatted date, time and millisec "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-/// - extended: Extended format. "eee dd-MMM-yyyy GG HH:mm:ss.SSS zzz"
-/// - rss: The RSS formatted date "EEE, d MMM yyyy HH:mm:ss ZZZ" i.e. "Fri, 09 Sep 2011 15:26:08 +0200"
-/// - altRSS: The Alternative RSS formatted date "d MMM yyyy HH:mm:ss ZZZ" i.e. "09 Sep 2011 15:26:08 +0200"
-/// - dotNet: The dotNet formatted date "/Date(%d%d)/" i.e. "/Date(1268123281843)/"
-/// - httpHeader: The http header formatted date "EEE, dd MMM yyyy HH:mm:ss zzz" i.e. "Tue, 15 Nov 1994 12:45:26 GMT"
-/// - custom: custom string format
-/// - standard: A generic standard format date i.e. "EEE MMM dd HH:mm:ss Z yyyy"
-/// - date: Date only format (short = "2/27/17", medium = "Feb 27, 2017", long = "February 27, 2017", full = "Monday, February 27, 2017"
-/// - time: Time only format (short = "2:22 PM", medium = "2:22:06 PM", long = "2:22:06 PM EST", full = "2:22:06 PM Eastern Standard Time"
-/// - dateTime: Date/Time format (short = "2/27/17, 2:22 PM", medium = "Feb 27, 2017, 2:22:06 PM", long = "February 27, 2017 at 2:22:06 PM EST", full = "Monday, February 27, 2017 at 2:22:06 PM Eastern Standard Time"
 public enum DateToStringStyles {
+    /// - iso: standard iso format. The ISO8601 formatted date, time and millisec "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
 	case iso(_: ISOFormatter.Options)
+    /// - extended: Extended format. "eee dd-MMM-yyyy GG HH:mm:ss.SSS zzz"
 	case extended
+    /// - rss: The RSS formatted date "EEE, d MMM yyyy HH:mm:ss ZZZ" i.e. "Fri, 09 Sep 2011 15:26:08 +0200"
 	case rss
+    /// - altRSS: The Alternative RSS formatted date "d MMM yyyy HH:mm:ss ZZZ" i.e. "09 Sep 2011 15:26:08 +0200"
 	case altRSS
-	case dotNet
+    /// - dotNet: The dotNet formatted date "/Date(%d%d)/" i.e. "/Date(1268123281843)/"
+    case dotNet
+    /// - httpHeader: The http header formatted date "EEE, dd MMM yyyy HH:mm:ss zzz" i.e. "Tue, 15 Nov 1994 12:45:26 GMT"
 	case httpHeader
+    /// - sql: Returns string in sql format
 	case sql
-	case date(_: DateFormatter.Style)
-	case time(_: DateFormatter.Style)
-	case dateTime(_: DateFormatter.Style)
-	case custom(_: String)
-	case standard
+    /// - date: Date only format (short = "2/27/17", medium = "Feb 27, 2017", long = "February 27, 2017", full = "Monday, February 27, 2017"
+    case date(_: DateFormatter.Style)
+    /// - time: Time only format (short = "2:22 PM", medium = "2:22:06 PM", long = "2:22:06 PM EST", full = "2:22:06 PM Eastern Standard Time"
+    case time(_: DateFormatter.Style)
+    /// - dateTime: Date/Time format (short = "2/27/17, 2:22 PM", medium = "Feb 27, 2017, 2:22:06 PM", long = "February 27, 2017 at 2:22:06 PM EST", full = "Monday, February 27, 2017 at 2:22:06 PM Eastern Standard Time"
+    case dateTime(_: DateFormatter.Style)
+    /// - custom: custom string format
+    case custom(_: String)
+    /// - standard: A generic standard format date i.e. "EEE MMM dd HH:mm:ss Z yyyy"
+    case standard
+    /// - relative: Give relative format style to string
 	case relative(style: RelativeFormatter.Style?)
 
+    /// :nodoc:
 	public func toString(_ date: DateRepresentable) -> String {
 		switch self {
 		case .iso(let opts):			return ISOFormatter.format(date, options: opts)
@@ -86,28 +91,29 @@ public enum DateToStringStyles {
 // MARK: - Parsers
 
 /// String to date transform
-///
-/// - iso: standard automatic iso parser (evaluate the date components automatically)
-/// - extended: Extended format. "eee dd-MMM-yyyy GG HH:mm:ss.SSS zzz"
-/// - rss: The RSS formatted date "EEE, d MMM yyyy HH:mm:ss ZZZ" i.e. "Fri, 09 Sep 2011 15:26:08 +0200"
-/// - altRSS: The Alternative RSS formatted date "d MMM yyyy HH:mm:ss ZZZ" i.e. "09 Sep 2011 15:26:08 +0200"
-/// - dotNet: The dotNet formatted date "/Date(%d%d)/" i.e. "/Date(1268123281843)/"
-/// - httpHeader: The http header formatted date "EEE, dd MMM yyyy HH:mm:ss zzz" i.e. "Tue, 15 Nov 1994 12:45:26 GMT"
-/// - strict: custom string format with lenient options active
-/// - custom: custom string format
-/// - standard: A generic standard format date i.e. "EEE MMM dd HH:mm:ss Z yyyy"
 public enum StringToDateStyles {
+    /// - iso: standard automatic iso parser (evaluate the date components automatically)
 	case iso(_: ISOParser.Options)
+    /// - extended: Extended format. "eee dd-MMM-yyyy GG HH:mm:ss.SSS zzz"
 	case extended
+    /// - rss: The RSS formatted date "EEE, d MMM yyyy HH:mm:ss ZZZ" i.e. "Fri, 09 Sep 2011 15:26:08 +0200"
 	case rss
+    /// - altRSS: The Alternative RSS formatted date "d MMM yyyy HH:mm:ss ZZZ" i.e. "09 Sep 2011 15:26:08 +0200"
 	case altRSS
-	case dotNet
+    /// - dotNet: The dotNet formatted date "/Date(%d%d)/" i.e. "/Date(1268123281843)/"
+    case dotNet
+    /// - sql: Returns sql format
 	case sql
-	case httpHeader
+    /// - httpHeader: The http header formatted date "EEE, dd MMM yyyy HH:mm:ss zzz" i.e. "Tue, 15 Nov 1994 12:45:26 GMT"
+    case httpHeader
+    /// - strict: custom string format with lenient options active
 	case strict(_: String)
+    /// - custom: custom string format
 	case custom(_: String)
+    /// - standard: A generic standard format date i.e. "EEE MMM dd HH:mm:ss Z yyyy"
 	case standard
 
+    /// Parse string to date
 	public func toDate(_ string: String, region: Region) -> DateInRegion? {
 		switch self {
 		case .iso(let options):				return ISOParser.parse(string, region: region, options: options)

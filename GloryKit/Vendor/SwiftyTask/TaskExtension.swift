@@ -11,7 +11,7 @@ import Foundation
 
 // MARK: - Run Task
 extension SwiftyTask{
-    
+    /// SwiftyTask's runner
     public final func run(_ queue: Queue? = nil, _ completion: CompletionClosure? = nil) {
         let _queue = queue?.queue ?? self.queue.queue
         _ = self.runTask{ result in
@@ -23,42 +23,42 @@ extension SwiftyTask{
 
 // MARK: - Static Functions
 extension SwiftyTask{
-    
+    /// Main instance
     public static func main(_ closure: @escaping StartClosure) -> SwiftyTask{
         return SwiftyTask(Queue.main, nil, { _ in return closure() })
     }
-    
+    /// Background instance
     public static func background(_ closure: @escaping StartClosure) -> SwiftyTask{
         return SwiftyTask(Queue.background, nil, { _ in return closure() })
     }
-    
+    /// UI instance
     public static func userInteractive(_ closure: @escaping StartClosure) -> SwiftyTask{
         return SwiftyTask(Queue.userInteractive, nil, { _ in return closure() })
     }
-    
+    /// User Initiated instance
     public static func userInitiated(_ closure: @escaping StartClosure) -> SwiftyTask{
         return SwiftyTask(Queue.userInitiated, nil, { _ in return closure() })
     }
-    
+    /// Utility instance
     public static func utility(_ closure: @escaping StartClosure) -> SwiftyTask{
         return SwiftyTask(Queue.utility, nil, { _ in return closure() })
     }
-    
+    /// Default instance
     public static func onDefault(_ closure: @escaping StartClosure) -> SwiftyTask{
         return SwiftyTask(Queue.default, nil, { _ in return closure() })
     }
-    
+    /// Custom instance
     public static func custom(_ queue: DispatchQueue, _ closure: @escaping StartClosure) -> SwiftyTask{
         return SwiftyTask(Queue.custom(queue: queue), nil, { _ in return closure() })
     }
-    
+    /// Run closure after specified time within queue
     public static func after(_ queue: Queue = Queue.background, seconds: Double, _ closure: @escaping StartClosure) -> SwiftyTask{
         return SwiftyTask(queue, nil) { _ in
             SwiftyTask.waitBlock(seconds)()
             return closure()
         }
     }
-    
+    /// Wait for closure to run in n seconds
     public static func wait(_ queue: Queue = Queue.background, seconds: Double, _ closure: StartClosure) -> SwiftyTask{
         return SwiftyTask(queue, nil) { _ in
             SwiftyTask.waitBlock(seconds)()
@@ -81,6 +81,7 @@ extension SwiftyTask{
 /// Functions to call from outside block.
 /// User can run in modes: main, background, userInteractive, userInitiated,
 /// utility, default, custom, after and wait GCD.
+/// :nodoc:
 extension SwiftyTask{
     
     public final func main(_ closure: @escaping Closure) -> SwiftyTask{

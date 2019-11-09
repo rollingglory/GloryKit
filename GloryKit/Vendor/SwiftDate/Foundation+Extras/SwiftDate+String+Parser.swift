@@ -13,7 +13,7 @@
 import Foundation
 
 // MARK: - DataParsable Protocol
-
+/// Date Parseable
 public protocol DateParsable {
 
 	/// Convert a string to a `DateInRegion` instance by parsing it with given parser

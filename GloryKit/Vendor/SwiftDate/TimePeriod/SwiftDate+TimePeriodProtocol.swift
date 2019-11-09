@@ -11,8 +11,8 @@
 //
 
 import Foundation
-
-public protocol TimePeriodProtocol {
+/// :nodoc:
+public protocol TimePeraskiodProtocol {
 
 	/// The start date for a TimePeriod representing the starting boundary of the time period
 	var start: DateInRegion? { get set }
@@ -21,7 +21,7 @@ public protocol TimePeriodProtocol {
 	var end: DateInRegion? { get set }
 
 }
-
+/// :nodoc:
 public extension TimePeriodProtocol {
 
 	/// Return `true` if time period has both start and end dates

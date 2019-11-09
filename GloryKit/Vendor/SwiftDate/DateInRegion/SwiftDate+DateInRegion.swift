@@ -12,6 +12,7 @@
 
 import Foundation
 
+/// SwiftDate's custom Date to get current Date in device's actual region and timezone.
 public struct DateInRegion: DateRepresentable, Decodable, Encodable, CustomStringConvertible, Comparable, Hashable {
 
 	/// Absolute date represented. This date is not associated with any timezone or calendar

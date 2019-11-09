@@ -12,6 +12,7 @@
 
 import Foundation
 
+/// Main SwiftDate instance
 public struct SwiftDate {
 
 	private init() { }

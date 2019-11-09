@@ -20,6 +20,7 @@ import Foundation
 /// - notDigit: expected digit, value cannot be parsed as int
 /// - notDouble: expected double digit, value cannot be parsed as double
 /// - invalid: invalid state reached. Something in the format is not correct
+/// :nodoc:
 public enum ISO8601ParserError: Error {
 	case eof
 	case notDigit
@@ -62,6 +63,7 @@ internal extension UnicodeScalar {
 /// I've made a Swift porting and fixed some issues when parsing several ISO8601 date variants.
 
 // swiftlint:disable type_body_length
+/// :nodoc:
 public class ISOParser: StringToDateTransformable {
 
 	/// Internal structure

@@ -12,9 +12,11 @@
 
 import Foundation
 
+/// Date Representable in other form
 public protocol DateRepresentable {
 
 	// MARK: - Date Components
+    /// Represented year
 	var year: Int { get }
 
 	/// Represented month
@@ -305,6 +307,7 @@ public protocol DateRepresentable {
 
 }
 
+/// :nodoc:
 public extension DateRepresentable {
 
 	// MARK: - Common Properties

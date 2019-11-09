@@ -11,12 +11,19 @@ import Foundation
 
 /// Queue enum for SwiftyTask
 public enum Queue {
+    /// Main queue instance
     case main
+    /// Background queue instance
     case background
+    /// UI queue instance
     case userInteractive
+    /// User Initiated queue instance
     case userInitiated
+    /// Utility queue instance
     case utility
+    /// Default queue instance
     case `default`
+    /// Custom queue instance
     case custom(queue: DispatchQueue)
     
     /// Queue var

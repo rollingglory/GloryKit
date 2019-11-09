@@ -12,6 +12,7 @@
 
 import Foundation
 
+/// :nodoc:
 public extension TimeInterval {
 
 	struct ComponentsFormatterOptions {

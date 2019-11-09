@@ -13,99 +13,99 @@
 import Foundation
 
 // MARK: - Comparing DateInRegion
-
+/// Comparable `is the same`
 public func == (lhs: DateInRegion, rhs: DateInRegion) -> Bool {
 	return (lhs.date.timeIntervalSince1970 == rhs.date.timeIntervalSince1970)
 }
-
+/// Comparable `is earlier or the same`
 public func <= (lhs: DateInRegion, rhs: DateInRegion) -> Bool {
 	let result = lhs.date.compare(rhs.date)
 	return (result == .orderedAscending || result == .orderedSame)
 }
-
+/// Comparable `is later or the same`
 public func >= (lhs: DateInRegion, rhs: DateInRegion) -> Bool {
 	let result = lhs.date.compare(rhs.date)
 	return (result == .orderedDescending || result == .orderedSame)
 }
-
+/// Comparable `is earlier`
 public func < (lhs: DateInRegion, rhs: DateInRegion) -> Bool {
 	return lhs.date.compare(rhs.date) == .orderedAscending
 }
-
+/// Comparable `is later`
 public func > (lhs: DateInRegion, rhs: DateInRegion) -> Bool {
 	return lhs.date.compare(rhs.date) == .orderedDescending
 }
 
 // The type of comparison to do against today's date or with the suplied date.
-///
-/// - isToday: hecks if date today.
-/// - isTomorrow: Checks if date is tomorrow.
-/// - isYesterday: Checks if date is yesterday.
-/// - isSameDay: Compares date days
-/// - isThisWeek: Checks if date is in this week.
-/// - isNextWeek: Checks if date is in next week.
-/// - isLastWeek: Checks if date is in last week.
-/// - isSameWeek: Compares date weeks
-/// - isThisMonth: Checks if date is in this month.
-/// - isNextMonth: Checks if date is in next month.
-/// - isLastMonth: Checks if date is in last month.
-/// - isSameMonth: Compares date months
-/// - isThisYear: Checks if date is in this year.
-/// - isNextYear: Checks if date is in next year.
-/// - isLastYear: Checks if date is in last year.
-/// - isSameYear: Compare date years
-/// - isInTheFuture: Checks if it's a future date
-/// - isInThePast: Checks if the date has passed
-/// - isEarlier: Checks if earlier than date
-/// - isLater: Checks if later than date
-/// - isWeekday: Checks if it's a weekday
-/// - isWeekend: Checks if it's a weekend
-/// - isInDST: Indicates whether the represented date uses daylight saving time.
-/// - isMorning: Return true if date is in the morning (>=5 - <12)
-/// - isAfternoon: Return true if date is in the afternoon (>=12 - <17)
-/// - isEvening: Return true if date is in the morning (>=17 - <21)
-/// - isNight: Return true if date is in the morning (>=21 - <5)
+/// Date Comparison
 public enum DateComparisonType {
 
 	// Days
+    /// - isToday: hecks if date today.
 	case isToday
+    /// - isTomorrow: Checks if date is tomorrow.
 	case isTomorrow
+    /// - isYesterday: Checks if date is yesterday.
 	case isYesterday
+    /// - isSameDay: Compares date days
 	case isSameDay(_ : DateRepresentable)
 
 	// Weeks
+    /// - isThisWeek: Checks if date is in this week.
 	case isThisWeek
+    /// - isNextWeek: Checks if date is in next week.
 	case isNextWeek
+    /// - isLastWeek: Checks if date is in last week.
 	case isLastWeek
+    /// - isSameWeek: Compares date weeks
 	case isSameWeek(_: DateRepresentable)
 
 	// Months
+    /// - isThisMonth: Checks if date is in this month.
 	case isThisMonth
+    /// - isNextMonth: Checks if date is in next month.
 	case isNextMonth
+    /// - isLastMonth: Checks if date is in last month.
 	case isLastMonth
+    /// - isSameMonth: Compares date months
 	case isSameMonth(_: DateRepresentable)
 
 	// Years
+    /// - isThisYear: Checks if date is in this year.
 	case isThisYear
+    /// - isNextYear: Checks if date is in next year.
 	case isNextYear
+    /// - isLastYear: Checks if date is in last year.
 	case isLastYear
+    /// - isSameYear: Compare date years
 	case isSameYear(_: DateRepresentable)
 
 	// Relative Time
+    /// - isInTheFuture: Checks if it's a future date
 	case isInTheFuture
+    /// - isInThePast: Checks if the date has passed
 	case isInThePast
+    /// - isEarlier: Checks if earlier than date
 	case isEarlier(than: DateRepresentable)
+    /// - isLater: Checks if later than date
 	case isLater(than: DateRepresentable)
+    /// - isWeekday: Checks if it's a weekday
 	case isWeekday
+    /// - isWeekend: Checks if it's a weekend
 	case isWeekend
 
 	// Day time
+    /// - isMorning: Return true if date is in the morning (>=5 - <12)
 	case isMorning
+    /// - isAfternoon: Return true if date is in the afternoon (>=12 - <17)
 	case isAfternoon
+    /// - isEvening: Return true if date is in the morning (>=17 - <21)
 	case isEvening
+    /// - isNight: Return true if date is in the morning (>=21 - <5)
 	case isNight
 
 	// TZ
+    /// - isInDST: Indicates whether the represented date uses daylight saving time.
 	case isInDST
 }
 

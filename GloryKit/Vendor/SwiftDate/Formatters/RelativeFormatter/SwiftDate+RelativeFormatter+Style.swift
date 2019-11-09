@@ -19,7 +19,7 @@ import Darwin
 #endif
 
 // MARK: - Style
-
+/// :nodoc:
 public extension RelativeFormatter {
 
 	enum PluralForm: String {
@@ -83,7 +83,7 @@ public extension RelativeFormatter {
 }
 
 // MARK: - Flavour
-
+/// :nodoc:
 public extension RelativeFormatter {
 
 	/// Supported flavours
@@ -102,7 +102,7 @@ public extension RelativeFormatter {
 }
 
 // MARK: - Gradation
-
+/// :nodoc:
 public extension RelativeFormatter {
 
 	/// Gradation is used to define a set of rules used to get the best
@@ -288,7 +288,7 @@ public extension RelativeFormatter {
 }
 
 // MARK: - Unit
-
+/// :nodoc:
 public extension RelativeFormatter {
 
 	/// Units for relative formatter

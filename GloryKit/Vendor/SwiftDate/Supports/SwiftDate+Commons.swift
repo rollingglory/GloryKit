@@ -11,7 +11,7 @@
 //
 
 import Foundation
-
+/// :nodoc:
 public extension DateFormatter {
 
 	/// Return the local thread shared formatter initialized with the configuration of the region passed.
@@ -68,23 +68,23 @@ internal func threadSharedObject<T: AnyObject>(key: String, create: () -> T) -> 
 /// Style used to format month, weekday, quarter symbols.
 /// Stand-alone properties are for use in places like calendar headers.
 /// Non-stand-alone properties are for use in context (for example, “Saturday, November 12th”).
-///
-/// - `default`: Default formatter (ie. `4th quarter` for quarter, `April` for months and `Wednesday` for weekdays)
-/// - defaultStandalone:  See `default`; See `short`; stand-alone properties are for use in places like calendar headers.
-/// - short: Short symbols (ie. `Jun` for months, `Fri` for weekdays, `Q1` for quarters).
-/// - veryShort: Very short symbols (ie. `J` for months, `F` for weekdays, for quarter it just return `short` variant).
-/// - standaloneShort: See `short`; stand-alone properties are for use in places like calendar headers.
-/// - standaloneVeryShort: See `veryShort`; stand-alone properties are for use in places like calendar headers.
 public enum SymbolFormatStyle {
-	case `default`
-	case defaultStandalone
-	case short
-	case veryShort
-	case standaloneShort
-	case standaloneVeryShort
+    /// - `default`: Default formatter (ie. `4th quarter` for quarter, `April` for months and `Wednesday` for weekdays)
+    case `default`
+    /// - defaultStandalone:  See `default`; See `short`; stand-alone properties are for use in places like calendar headers.
+    case defaultStandalone
+    /// - short: Short symbols (ie. `Jun` for months, `Fri` for weekdays, `Q1` for quarters).
+    case short
+    /// - veryShort: Very short symbols (ie. `J` for months, `F` for weekdays, for quarter it just return `short` variant).
+    case veryShort
+    /// - standaloneShort: See `short`; stand-alone properties are for use in places like calendar headers.
+    case standaloneShort
+    /// - standaloneVeryShort: See `veryShort`; stand-alone properties are for use in places like calendar headers.
+    case standaloneVeryShort
 }
 
 /// Encapsulate the logic to use date format strings
+/// :nodoc:
 public struct DateFormats {
 
 	/// This is the built-in list of all supported formats for auto-parsing of a string to a date.
@@ -212,6 +212,7 @@ public extension Calendar.Component {
 
 /// Rounding mode for dates.
 /// Round off/up (ceil) or down (floor) target date.
+/// :nodoc:
 public enum RoundDateMode {
 	case to5Mins
 	case to10Mins
@@ -228,6 +229,7 @@ public enum RoundDateMode {
 }
 
 /// Related type enum to get derivated date from a receiver date.
+/// :nodoc:
 public enum DateRelatedType {
 	case startOfDay
 	case endOfDay
@@ -251,7 +253,7 @@ public enum DateRelatedType {
 	case prevYear
 	case nextDSTTransition
 }
-
+/// :nodoc:
 public struct TimeCalculationOptions {
 
 	/// Specifies the technique the search algorithm uses to find result
@@ -273,7 +275,7 @@ public struct TimeCalculationOptions {
 }
 
 // MARK: - compactMap for Swift 4.0 (not necessary > 4.0)
-
+/// :nodoc:
 #if swift(>=4.1)
 #else
 	extension Collection {

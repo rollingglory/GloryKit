@@ -9,27 +9,29 @@
 <p align="center">Release Status<br>
 <img alt="Release" src="https://img.shields.io/github/v/release/rollingglory/GloryKit" target="_blank" /></p>
 
->GloryKit starts your project off with a great preparation and _almost_ everything you need to start developing with ease 💖 and a peace of mind 😌.
-## Installation
+<p>GloryKit starts your project off with a great preparation and <i>almost</i> everything you need to start developing with ease 💖 and a peace of mind 😌.
+
+<h2>Installation</h2>
 
 Currently GloryKit can only be installed using Carthage or manual submoduling.
-**Please refer to _release status_ for release availability. Don't use incubation/beta version without knowing and accepting possible bugs or issues.**
+<b>Please refer to <i>release status</i> for release availability. Don't use incubation/beta version without knowing and accepting possible bugs or issues.</b></p>
 
-**Carthage**:
-```bash
+<b>Carthage</b>:
+<pre>
 github "https://github.com/rollingglory/GloryKit" == 1.0
-```
-New to Carthage? You can follow the instructions [here](https://github.com/Carthage/Carthage#installing-carthage) to use Carthage and add frameworks to project.
+</pre>
 
-**Submodule**:
+<p>New to Carthage? You can follow the instructions <a href="https://github.com/Carthage/Carthage#installing-carthage">here</a> to use Carthage and add frameworks to project.</p>
 
-Simply clone or download this project and add manually to your project directory.
+<b>Submodule</b>:
 
-## Usage
+<p>Simply clone or download this project and add manually to your project directory.</p>
 
-For basic usage you can import GloryKit and other corresponding framework, as GloryKit doesn't automatically include specific framework in usage of its methods.
+<h2>Usage</h2>
 
-```swift
+<p>For basic usage you can import GloryKit and other corresponding framework, as GloryKit doesn't automatically include specific framework in usage of its methods.</p>
+
+<pre>
 import GloryKit
 
 class MyClass: GloryController {
@@ -39,17 +41,17 @@ class MyClass: GloryController {
     Glory().initiate()
   }
 }
-```
+</pre>
 
-You can directly use GloryKit features, extensions, public helper and many more.
-For advanced class reference, though, you can read them all [here](https://rollingglory.com/glorykit/docs.html).
+<p>You can directly use GloryKit features, extensions, public helper and many more.
+For advanced class reference, though, you can read them all <a href="https://rollingglory.com/glorykit/docs.html">here</a>.</p>
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+<h2>Contributing</h2>
+<p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
 
-## License
+<h2>License</h2>
 
-MIT License
+<p>MIT License
 
 Copyright (c) 2019 Rolling Glory
 
@@ -63,6 +65,5 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-<p>
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </p>

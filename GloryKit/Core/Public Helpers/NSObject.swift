@@ -40,6 +40,7 @@ public extension NSObject {
         return self
     }
     
+    /// :nodoc:
     @discardableResult
     func run<T>(closure: (NSObject) -> T) -> T {
         return closure(self)

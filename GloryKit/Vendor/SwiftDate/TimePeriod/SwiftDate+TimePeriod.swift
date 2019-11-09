@@ -24,7 +24,7 @@ open class TimePeriod: TimePeriodProtocol {
 	public var end: DateInRegion?
 
 	// MARK: - Initializers
-
+    /// :nodoc:
 	public init() { }
 
 	/// Create a new time period with given date range.

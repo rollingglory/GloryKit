@@ -35,6 +35,7 @@ public func - (lhs: Date, rhs: DateComponents) -> Date {
 	return (lhs + (-rhs))
 }
 
+/// Adds date components to a date and returns time interval.
 public func + (lhs: Date, rhs: TimeInterval) -> Date {
 	return lhs.addingTimeInterval(rhs)
 }
