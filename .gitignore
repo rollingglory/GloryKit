@@ -12,6 +12,9 @@ docs/
 build/
 DerivedData/
 
+## Documentation
+jazzy/
+
 ## Various settings
 *.pbxuser
 !default.pbxuser

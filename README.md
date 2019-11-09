@@ -33,11 +33,11 @@ For basic usage you can import GloryKit and other corresponding framework, as Gl
 import GloryKit
 
 class MyClass: GloryController {
-override func viewDidLoad() {
-super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-Glory().initiate()
-}
+    Glory().initiate()
+  }
 }
 ```
 
