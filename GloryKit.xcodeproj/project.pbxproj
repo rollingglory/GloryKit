@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		431EB15E237AB79200DC0301 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431EB15D237AB79200DC0301 /* Kingfisher.framework */; };
+		431EB160237AC8A400DC0301 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431EB15F237AC8A400DC0301 /* UIImageView.swift */; };
 		432DF42E235E92C200A6BA87 /* SwiftDate+DateInRegion+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432DF388235E92C100A6BA87 /* SwiftDate+DateInRegion+Create.swift */; };
 		432DF42F235E92C200A6BA87 /* SwiftDate+DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432DF389235E92C100A6BA87 /* SwiftDate+DateInRegion.swift */; };
 		432DF430235E92C200A6BA87 /* SwiftDate+DateInRegion+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432DF38A235E92C100A6BA87 /* SwiftDate+DateInRegion+Math.swift */; };
@@ -237,6 +239,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		431EB15D237AB79200DC0301 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		431EB15F237AC8A400DC0301 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		432DF388235E92C100A6BA87 /* SwiftDate+DateInRegion+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftDate+DateInRegion+Create.swift"; sourceTree = "<group>"; };
 		432DF389235E92C100A6BA87 /* SwiftDate+DateInRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftDate+DateInRegion.swift"; sourceTree = "<group>"; };
 		432DF38A235E92C100A6BA87 /* SwiftDate+DateInRegion+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftDate+DateInRegion+Math.swift"; sourceTree = "<group>"; };
@@ -463,6 +467,7 @@
 				43A2794A233C9DFD00A1DF25 /* Realm.framework in Frameworks */,
 				435DCF79233A0B4000E5F6C2 /* RxAtomic.framework in Frameworks */,
 				435DCF7A233A0B4000E5F6C2 /* RxMoya.framework in Frameworks */,
+				431EB15E237AB79200DC0301 /* Kingfisher.framework in Frameworks */,
 				435DCF7B233A0B4000E5F6C2 /* Result.framework in Frameworks */,
 				435DCF7C233A0B4000E5F6C2 /* RxCocoa.framework in Frameworks */,
 				435DCF7E233A0B4000E5F6C2 /* Alamofire.framework in Frameworks */,
@@ -791,6 +796,7 @@
 		435DCF6D233A0B4000E5F6C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				431EB15D237AB79200DC0301 /* Kingfisher.framework */,
 				433549CE2356FAF300C76925 /* SnapKit.framework */,
 				43A27948233C9DFD00A1DF25 /* Realm.framework */,
 				43A27947233C9DFD00A1DF25 /* RealmSwift.framework */,
@@ -883,6 +889,7 @@
 				43D9A4B72359D8C1003F694C /* Bool.swift */,
 				43CC60D72356D31A00B9A536 /* NSObject.swift */,
 				433549CC2356EA6E00C76925 /* UICollectionView.swift */,
+				431EB15F237AC8A400DC0301 /* UIImageView.swift */,
 				43CC60D92356D3C300B9A536 /* UITableView.swift */,
 				435DCF96233A11D400E5F6C2 /* UIView.swift */,
 			);
@@ -1122,6 +1129,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = CARTHAGE;
 			outputFileListPaths = (
@@ -1139,6 +1147,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1183,6 +1192,7 @@
 				43CC60DA2356D3C300B9A536 /* UITableView.swift in Sources */,
 				432DF4C6235E92C200A6BA87 /* SwiftDate+Formatter+Protocols.swift in Sources */,
 				435DCF8D233A0D6400E5F6C2 /* Single+ObjectMapper.swift in Sources */,
+				431EB160237AC8A400DC0301 /* UIImageView.swift in Sources */,
 				432DF437235E92C200A6BA87 /* SwiftDate+Commons.swift in Sources */,
 				433BB339235DB6D000C2FBE9 /* UIFont+SwifterSwift.swift in Sources */,
 				433BB327235D8E3400C2FBE9 /* Sequence+SwifterSwift.swift in Sources */,

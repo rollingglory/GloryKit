@@ -12,7 +12,7 @@
 
 import Foundation
 /// :nodoc:
-public protocol TimePeraskiodProtocol {
+public protocol TimePeriodProtocol {
 
 	/// The start date for a TimePeriod representing the starting boundary of the time period
 	var start: DateInRegion? { get set }
