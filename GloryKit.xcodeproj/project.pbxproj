@@ -229,6 +229,7 @@
 		43CC60D42356CA8000B9A536 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC60D12356CA8000B9A536 /* Queue.swift */; };
 		43CC60D82356D31A00B9A536 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC60D72356D31A00B9A536 /* NSObject.swift */; };
 		43CC60DA2356D3C300B9A536 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC60D92356D3C300B9A536 /* UITableView.swift */; };
+		43D39452237D4FE500290AFD /* GloryPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D39451237D4FE500290AFD /* GloryPaginator.swift */; };
 		43D9A4B42359D310003F694C /* Array+SwifterSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9A4B32359D310003F694C /* Array+SwifterSwift.swift */; };
 		43D9A4B62359D45A003F694C /* BidirectionalCollection+SwifterSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9A4B52359D45A003F694C /* BidirectionalCollection+SwifterSwift.swift */; };
 		43D9A4B82359D8C1003F694C /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9A4B72359D8C1003F694C /* Bool.swift */; };
@@ -449,6 +450,7 @@
 		43CC60D12356CA8000B9A536 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		43CC60D72356D31A00B9A536 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		43CC60D92356D3C300B9A536 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		43D39451237D4FE500290AFD /* GloryPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloryPaginator.swift; sourceTree = "<group>"; };
 		43D9A4B32359D310003F694C /* Array+SwifterSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SwifterSwift.swift"; sourceTree = "<group>"; };
 		43D9A4B52359D45A003F694C /* BidirectionalCollection+SwifterSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BidirectionalCollection+SwifterSwift.swift"; sourceTree = "<group>"; };
 		43D9A4B72359D8C1003F694C /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
@@ -816,6 +818,7 @@
 		435DCF85233A0D0700E5F6C2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				43D39450237D4FD300290AFD /* Constructor */,
 				435DCF98233A135600E5F6C2 /* Controllers */,
 				4361CC96233DB04000B61509 /* Database */,
 				43CC60D62356D1C600B9A536 /* Public Helpers */,
@@ -894,6 +897,14 @@
 				435DCF96233A11D400E5F6C2 /* UIView.swift */,
 			);
 			path = "Public Helpers";
+			sourceTree = "<group>";
+		};
+		43D39450237D4FD300290AFD /* Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				43D39451237D4FE500290AFD /* GloryPaginator.swift */,
+			);
+			path = Constructor;
 			sourceTree = "<group>";
 		};
 		43D9A4B22359D2F9003F694C /* SwifterSwift */ = {
@@ -1226,6 +1237,7 @@
 				433BB33D235DC4C200C2FBE9 /* UINavigationController+SwifterSwift.swift in Sources */,
 				43D9A4BA2359DB98003F694C /* Collection+SwifterSwift.swift in Sources */,
 				432DF434235E92C200A6BA87 /* SwiftDate.swift in Sources */,
+				43D39452237D4FE500290AFD /* GloryPaginator.swift in Sources */,
 				435DCF97233A11D400E5F6C2 /* UIView.swift in Sources */,
 				435DCF8C233A0D6400E5F6C2 /* ObservableType+ObjectMapper.swift in Sources */,
 				432DF449235E92C200A6BA87 /* SwiftDate+RelativeFormatter+Style.swift in Sources */,
