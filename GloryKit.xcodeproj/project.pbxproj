@@ -230,6 +230,7 @@
 		43CC60D82356D31A00B9A536 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC60D72356D31A00B9A536 /* NSObject.swift */; };
 		43CC60DA2356D3C300B9A536 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC60D92356D3C300B9A536 /* UITableView.swift */; };
 		43D39452237D4FE500290AFD /* GloryPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D39451237D4FE500290AFD /* GloryPaginator.swift */; };
+		43D39454237D5FFA00290AFD /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D39453237D5FFA00290AFD /* KeychainSwift.framework */; };
 		43D9A4B42359D310003F694C /* Array+SwifterSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9A4B32359D310003F694C /* Array+SwifterSwift.swift */; };
 		43D9A4B62359D45A003F694C /* BidirectionalCollection+SwifterSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9A4B52359D45A003F694C /* BidirectionalCollection+SwifterSwift.swift */; };
 		43D9A4B82359D8C1003F694C /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9A4B72359D8C1003F694C /* Bool.swift */; };
@@ -451,6 +452,7 @@
 		43CC60D72356D31A00B9A536 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		43CC60D92356D3C300B9A536 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		43D39451237D4FE500290AFD /* GloryPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloryPaginator.swift; sourceTree = "<group>"; };
+		43D39453237D5FFA00290AFD /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
 		43D9A4B32359D310003F694C /* Array+SwifterSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SwifterSwift.swift"; sourceTree = "<group>"; };
 		43D9A4B52359D45A003F694C /* BidirectionalCollection+SwifterSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BidirectionalCollection+SwifterSwift.swift"; sourceTree = "<group>"; };
 		43D9A4B72359D8C1003F694C /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
@@ -474,6 +476,7 @@
 				435DCF7C233A0B4000E5F6C2 /* RxCocoa.framework in Frameworks */,
 				435DCF7E233A0B4000E5F6C2 /* Alamofire.framework in Frameworks */,
 				435DCF7F233A0B4000E5F6C2 /* ReactiveSwift.framework in Frameworks */,
+				43D39454237D5FFA00290AFD /* KeychainSwift.framework in Frameworks */,
 				435DCF80233A0B4000E5F6C2 /* RxSwift.framework in Frameworks */,
 				433549CF2356FAF300C76925 /* SnapKit.framework in Frameworks */,
 				435DCF82233A0B4000E5F6C2 /* Moya.framework in Frameworks */,
@@ -798,6 +801,7 @@
 		435DCF6D233A0B4000E5F6C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43D39453237D5FFA00290AFD /* KeychainSwift.framework */,
 				431EB15D237AB79200DC0301 /* Kingfisher.framework */,
 				433549CE2356FAF300C76925 /* SnapKit.framework */,
 				43A27948233C9DFD00A1DF25 /* Realm.framework */,
@@ -1141,6 +1145,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
 			);
 			name = CARTHAGE;
 			outputFileListPaths = (
@@ -1159,6 +1164,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
