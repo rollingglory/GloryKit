@@ -12,7 +12,7 @@ import ObjectMapper
 import Moya
 
 /// :nodoc:
-public extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Response {
+public extension PrimitiveSequence where Trait == SingleTrait, Element == Response {
     /// Map response to entirely different mappable object
     /// :nodoc:
     func map<T: Mappable>() -> Single<T> {

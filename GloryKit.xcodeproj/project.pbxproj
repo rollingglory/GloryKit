@@ -204,7 +204,6 @@
 		433BB349235DC84000C2FBE9 /* UIView+SwifterSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB348235DC84000C2FBE9 /* UIView+SwifterSwift.swift */; };
 		435DCF622339FCB800E5F6C2 /* GloryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 435DCF542339FCB800E5F6C2 /* GloryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435DCF6C2339FCC700E5F6C2 /* GloryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DCF6B2339FCC700E5F6C2 /* GloryController.swift */; };
-		435DCF79233A0B4000E5F6C2 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435DCF6E233A0B4000E5F6C2 /* RxAtomic.framework */; };
 		435DCF7A233A0B4000E5F6C2 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435DCF6F233A0B4000E5F6C2 /* RxMoya.framework */; };
 		435DCF7B233A0B4000E5F6C2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435DCF70233A0B4000E5F6C2 /* Result.framework */; };
 		435DCF7C233A0B4000E5F6C2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435DCF71233A0B4000E5F6C2 /* RxCocoa.framework */; };
@@ -469,7 +468,6 @@
 			files = (
 				43A27949233C9DFD00A1DF25 /* RealmSwift.framework in Frameworks */,
 				43A2794A233C9DFD00A1DF25 /* Realm.framework in Frameworks */,
-				435DCF79233A0B4000E5F6C2 /* RxAtomic.framework in Frameworks */,
 				435DCF7A233A0B4000E5F6C2 /* RxMoya.framework in Frameworks */,
 				431EB15E237AB79200DC0301 /* Kingfisher.framework in Frameworks */,
 				435DCF7B233A0B4000E5F6C2 /* Result.framework in Frameworks */,
@@ -1140,7 +1138,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
@@ -1156,7 +1153,6 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxAtomic.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxMoya.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",

@@ -12,7 +12,7 @@ import ObjectMapper
 
 /// Extension for processing Responses into Mappable objects through ObjectMapper
 /// :nodoc:
-public extension ObservableType where E == Response {
+public extension ObservableType where Element == Response {
 
   /// Maps data received from the signal into an object
   /// which implements the Mappable protocol and returns the result back
@@ -57,7 +57,7 @@ public extension ObservableType where E == Response {
 
 // MARK: - ImmutableMappable
 /// :nodoc:
-public extension ObservableType where E == Response {
+public extension ObservableType where Element == Response {
 
   /// Maps data received from the signal into an object
   /// which implements the ImmutableMappable protocol and returns the result back
