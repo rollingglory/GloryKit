@@ -3,4 +3,5 @@ github "onevcat/Kingfisher" == 5.7.1
 github "Moya/Moya" == 14.0.0-alpha.1
 github "tristanhimmelman/ObjectMapper" == 3.4
 github "realm/realm-cocoa" == 3.18.0
+github "Juanpe/SkeletonView" == 1.8.1
 github "SnapKit/SnapKit" == 5.0.0

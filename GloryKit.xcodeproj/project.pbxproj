@@ -202,6 +202,9 @@
 		433BB345235DC65800C2FBE9 /* UITableView+SwifterSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB344235DC65800C2FBE9 /* UITableView+SwifterSwift.swift */; };
 		433BB347235DC6A200C2FBE9 /* UIViewController+SwifterSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB346235DC6A200C2FBE9 /* UIViewController+SwifterSwift.swift */; };
 		433BB349235DC84000C2FBE9 /* UIView+SwifterSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BB348235DC84000C2FBE9 /* UIView+SwifterSwift.swift */; };
+		435247AC23A7A2B200D0655D /* SkeletonView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435247AB23A7A2B200D0655D /* SkeletonView.framework */; };
+		435247B023A7A33500D0655D /* GloryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435247AF23A7A33500D0655D /* GloryTableView.swift */; };
+		435247B223A7A3DA00D0655D /* GloryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435247B123A7A3DA00D0655D /* GloryCollectionView.swift */; };
 		435DCF622339FCB800E5F6C2 /* GloryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 435DCF542339FCB800E5F6C2 /* GloryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435DCF6C2339FCC700E5F6C2 /* GloryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DCF6B2339FCC700E5F6C2 /* GloryController.swift */; };
 		435DCF7A233A0B4000E5F6C2 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435DCF6F233A0B4000E5F6C2 /* RxMoya.framework */; };
@@ -421,6 +424,9 @@
 		433BB344235DC65800C2FBE9 /* UITableView+SwifterSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+SwifterSwift.swift"; sourceTree = "<group>"; };
 		433BB346235DC6A200C2FBE9 /* UIViewController+SwifterSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SwifterSwift.swift"; sourceTree = "<group>"; };
 		433BB348235DC84000C2FBE9 /* UIView+SwifterSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SwifterSwift.swift"; sourceTree = "<group>"; };
+		435247AB23A7A2B200D0655D /* SkeletonView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkeletonView.framework; path = Carthage/Build/iOS/SkeletonView.framework; sourceTree = "<group>"; };
+		435247AF23A7A33500D0655D /* GloryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloryTableView.swift; sourceTree = "<group>"; };
+		435247B123A7A3DA00D0655D /* GloryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloryCollectionView.swift; sourceTree = "<group>"; };
 		435DCF512339FCB800E5F6C2 /* GloryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GloryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		435DCF542339FCB800E5F6C2 /* GloryKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloryKit.h; sourceTree = "<group>"; };
 		435DCF552339FCB800E5F6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -476,6 +482,7 @@
 				435DCF7F233A0B4000E5F6C2 /* ReactiveSwift.framework in Frameworks */,
 				43D39454237D5FFA00290AFD /* KeychainSwift.framework in Frameworks */,
 				435DCF80233A0B4000E5F6C2 /* RxSwift.framework in Frameworks */,
+				435247AC23A7A2B200D0655D /* SkeletonView.framework in Frameworks */,
 				433549CF2356FAF300C76925 /* SnapKit.framework in Frameworks */,
 				435DCF82233A0B4000E5F6C2 /* Moya.framework in Frameworks */,
 				435DCF83233A0B4000E5F6C2 /* ObjectMapper.framework in Frameworks */,
@@ -799,6 +806,7 @@
 		435DCF6D233A0B4000E5F6C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				435247AB23A7A2B200D0655D /* SkeletonView.framework */,
 				43D39453237D5FFA00290AFD /* KeychainSwift.framework */,
 				431EB15D237AB79200DC0301 /* Kingfisher.framework */,
 				433549CE2356FAF300C76925 /* SnapKit.framework */,
@@ -905,6 +913,8 @@
 			isa = PBXGroup;
 			children = (
 				43D39451237D4FE500290AFD /* GloryPaginator.swift */,
+				435247AF23A7A33500D0655D /* GloryTableView.swift */,
+				435247B123A7A3DA00D0655D /* GloryCollectionView.swift */,
 			);
 			path = Constructor;
 			sourceTree = "<group>";
@@ -1143,6 +1153,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SkeletonView.framework",
 			);
 			name = CARTHAGE;
 			outputFileListPaths = (
@@ -1161,6 +1172,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SkeletonView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1191,6 +1203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43D9A4BE2359DE1E003F694C /* Optional+SwifterSwift.swift in Sources */,
+				435247B023A7A33500D0655D /* GloryTableView.swift in Sources */,
 				432DF4C9235E92C200A6BA87 /* SwiftDate+String+Parser.swift in Sources */,
 				432DF440235E92C200A6BA87 /* SwiftDate+TimePeriodProtocol.swift in Sources */,
 				432DF43D235E92C200A6BA87 /* SwiftDate+TimePeriodChain.swift in Sources */,
@@ -1269,6 +1282,7 @@
 				432DF447235E92C200A6BA87 /* SwiftDate+ISOFormatter.swift in Sources */,
 				432DF445235E92C200A6BA87 /* SwiftDate+Components.swift in Sources */,
 				433BB33B235DC3CE00C2FBE9 /* UIImage+SwifterSwift.swift in Sources */,
+				435247B223A7A3DA00D0655D /* GloryCollectionView.swift in Sources */,
 				433BB349235DC84000C2FBE9 /* UIView+SwifterSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
