@@ -1,6 +1,6 @@
 github "evgenyneu/keychain-swift" ~> 18.0
 github "onevcat/Kingfisher" == 5.7.1
-github "Moya/Moya" == 13.0
+github "Moya/Moya" == 14.0.0-alpha.1
 github "tristanhimmelman/ObjectMapper" == 3.4
 github "realm/realm-cocoa" == 3.18.0
 github "SnapKit/SnapKit" == 5.0.0
