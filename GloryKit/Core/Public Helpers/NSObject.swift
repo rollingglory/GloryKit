@@ -2,8 +2,8 @@
 //  NSObject.swift
 //  GloryKit
 //
-//  Created by Krisnandika Aji on 16/10/19.
-//  Copyright © 2019 Krisnandika Aji. All rights reserved.
+//  Created by Rolling Glory on 16/10/19.
+//  Copyright © 2019 Rolling Glory. All rights reserved.
 //
 
 import Foundation

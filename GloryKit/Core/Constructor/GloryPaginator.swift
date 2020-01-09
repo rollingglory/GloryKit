@@ -2,8 +2,8 @@
 //  GloryPaginator.swift
 //  GloryKit
 //
-//  Created by Krisnandika Aji on 14/11/19.
-//  Copyright © 2019 Krisnandika Aji. All rights reserved.
+//  Created by Rolling Glory on 14/11/19.
+//  Copyright © 2019 Rolling Glory. All rights reserved.
 //
 
 import Foundation

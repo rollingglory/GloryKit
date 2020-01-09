@@ -2,7 +2,7 @@
 //  BaseScrollController.swift
 //  KlikDokter App for Doctor
 //
-//  Created by Krisnandika Aji on 14/02/19.
+//  Created by Rolling Glory on 14/02/19.
 //  Copyright © 2019 RGB. All rights reserved.
 //
 

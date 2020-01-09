@@ -226,6 +226,7 @@
 		4361CC9A233DC36C00B61509 /* Realm+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361CC99233DC36C00B61509 /* Realm+ObjectMapper.swift */; };
 		43A27949233C9DFD00A1DF25 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A27947233C9DFD00A1DF25 /* RealmSwift.framework */; };
 		43A2794A233C9DFD00A1DF25 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A27948233C9DFD00A1DF25 /* Realm.framework */; };
+		43A4F96523C7201A006DD047 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A4F96423C7201A006DD047 /* Utils.swift */; };
 		43CC60D22356CA8000B9A536 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC60CF2356CA8000B9A536 /* Task.swift */; };
 		43CC60D32356CA8000B9A536 /* TaskExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC60D02356CA8000B9A536 /* TaskExtension.swift */; };
 		43CC60D42356CA8000B9A536 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC60D12356CA8000B9A536 /* Queue.swift */; };
@@ -451,6 +452,7 @@
 		4361CC99233DC36C00B61509 /* Realm+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+ObjectMapper.swift"; sourceTree = "<group>"; };
 		43A27947233C9DFD00A1DF25 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		43A27948233C9DFD00A1DF25 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		43A4F96423C7201A006DD047 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		43CC60CF2356CA8000B9A536 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		43CC60D02356CA8000B9A536 /* TaskExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskExtension.swift; sourceTree = "<group>"; };
 		43CC60D12356CA8000B9A536 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -904,6 +906,7 @@
 				433549CC2356EA6E00C76925 /* UICollectionView.swift */,
 				431EB15F237AC8A400DC0301 /* UIImageView.swift */,
 				43CC60D92356D3C300B9A536 /* UITableView.swift */,
+				43A4F96423C7201A006DD047 /* Utils.swift */,
 				435DCF96233A11D400E5F6C2 /* UIView.swift */,
 			);
 			path = "Public Helpers";
@@ -1228,6 +1231,7 @@
 				432DF4C4235E92C200A6BA87 /* SwiftDate+RelativeFormatterLanguage.swift in Sources */,
 				433BB347235DC6A200C2FBE9 /* UIViewController+SwifterSwift.swift in Sources */,
 				432DF4CA235E92C200A6BA87 /* SwiftDate+TimeInterval+Formatter.swift in Sources */,
+				43A4F96523C7201A006DD047 /* Utils.swift in Sources */,
 				43D9A4B62359D45A003F694C /* BidirectionalCollection+SwifterSwift.swift in Sources */,
 				433549CD2356EA6E00C76925 /* UICollectionView.swift in Sources */,
 				432DF441235E92C200A6BA87 /* SwiftDate+Compare.swift in Sources */,
